@@ -52,18 +52,14 @@ html {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modal-content {
+.modal-content1 {
   background-color: var(--clr-white);
-  margin: 15%;
+  margin: auto;
   padding: 20px;
   width: 80%;
-  height: 60%;
-  display: flex;
-	flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-  padding: 25px 50px 50px 50px;
+  height: 50%;
+  text-align: center;
+  padding: 25px 25px 25px 25px;
 }
 
 
@@ -85,10 +81,11 @@ html {
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: #fefefe;
+  background-color: var(--clr-white);
   margin: auto;
   padding: 25px;
   width: 80%;
+  height: 50%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -113,7 +110,7 @@ html {
 .modal-button {
   background-color: var(--clr-lightblue);
   color: var(--clr-white);
-  padding: 30px 30px;
+  padding: 20px 20px;
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -144,3 +141,8 @@ html {
   border-color: var(--clr-darkblue);
 }
 
+.overskrifter {
+  font-size:xx-large;
+  font-family: var(--ff-primary);
+  color: var(--clr-darkblue);
+}
