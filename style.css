@@ -36,6 +36,8 @@ html {
 .myButton:hover {
   background-color: var(--clr-white);
   color: var(--clr-darkblue);
+  border-style: inset;
+  border-color: var(--clr-darkblue);
 }
 
 .modal {
@@ -52,64 +54,19 @@ html {
 
 .modal-content {
   background-color: var(--clr-white);
-  margin: 15% auto;
+  margin: 15%;
   padding: 20px;
-  border: 1px solid #888;
   width: 80%;
+  height: 60%;
+  display: flex;
+	flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  padding: 25px 50px 50px 50px;
 }
 
-.close {
-  color: var(--clr-lightblue);
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
 
-.close:hover,
-.close:focus {
-  color: var(--clr-red);
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.questionnaire {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-}
-
-.question {
-  display: none;
-}
-
-.question p {
-  font-weight: bold;
-}
-
-.question ul {
-  list-style: none;
-  padding: 0;
-}
-
-.question li {
-  margin-bottom: 5px;
-}
-
-.result {
-  display: none;
-  margin-top: 20px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.alert.alert-info, .button
-{ 
-   max-width: 600px; 
-   margin: 40px auto;
-   text-align: center;
-}
-
-/*kampagneknap*/
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -130,8 +87,7 @@ html {
   position: relative;
   background-color: #fefefe;
   margin: auto;
-  padding: 0;
-  border: 1px solid #888;
+  padding: 25px;
   width: 80%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
@@ -140,7 +96,6 @@ html {
   animation-duration: 0.4s
 }
 
-/* Add Animation */
 @-webkit-keyframes animatetop {
   from {top:-300px; opacity:0}
   to {top:0; opacity:1}
@@ -151,35 +106,41 @@ html {
   to {top:0; opacity:1}
 }
 
-/* The Close Button */
-.close {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+.modal-body {
+  padding: 2px 16px;
 }
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.modal-body {padding: 2px 16px;}
 
 .modal-button {
-    background-color: var(--clr-lightblue);
-    color: var(--clr-white);
-    padding: 12px 24px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 16px;
-  }
+  background-color: var(--clr-lightblue);
+  color: var(--clr-white);
+  padding: 30px 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
   
-  .modal-button:hover {
-    background-color: var(--clr-white);
-    color: var(--clr-darkblue);
-  }
-/*kampagneknap slut*/
+.modal-button:hover {
+  background-color: var(--clr-white);
+  color: var(--clr-darkblue);
+  border-style: inset;
+  border-color: var(--clr-darkblue);
+}
+
+.destination {
+  background-color: var(--clr-lightblue);
+  color: var(--clr-white);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.destination:hover {
+  background-color: var(--clr-white);
+  color: var(--clr-darkblue);
+  border-style: inset;
+  border-color: var(--clr-darkblue);
+}
+
