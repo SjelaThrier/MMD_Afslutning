@@ -146,3 +146,21 @@ html {
   font-family: var(--ff-primary);
   color: var(--clr-darkblue);
 }
+
+.close {
+  float: right;
+  color: var(--clr-lightblue);
+  padding: 20px 20px;
+  background-color: var(--clr-white);
+  border-style: none;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
+  
+.close:hover {
+  background-color: var(--clr-white);
+  color: var(--clr-red);
+  border-style: none;
+}
