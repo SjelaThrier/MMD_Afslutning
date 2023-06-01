@@ -11,7 +11,7 @@ var spans = document.getElementsByClassName("close");
 for (var i = 0; i < btn.length; i++) {
  btn[i].onclick = function(e) {
     e.preventDefault();
-    modal = document.querySelector(e.target.getAttribute("href"));
+    modal = document.querySelector(e.target.getAttribute("data-target-id"));
     modal.style.display = "block";
  }
 }
